@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="./Docs/style/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Compare & Shop the Best Financial Products _ Best Money</title>
+</head>
+
+<body>
+    <nav class="bg-white">
+        <div class="flex h-16 lg:px-0 px-8 items-center justify-between container mx-auto">
+            <img src="./Docs/Assets/Images/home/logo.svg" alt="log" class="h-6">
+            <ul class="items-center md:flex hidden gap-7 text-[17px]">
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./partner-with-us.html">Partner with Us</a></li>
+            </ul>
+            <i class="fa-solid fa-bars text-2xl md:hidden"></i>
+        </div>
+    </nav>
+
+    <!-- hero Section -->
+    <div class="h-[calc(100vh-64px)] bg-green-400 flex items-center justify-center">
+        <h1 class="text-5xl font-bold max-w-3xl text-center text-white ">Compare and shop the best financial products
+            for you</h1>
+    </div>
+
+    <!-- logoes--------- -->
+
+
+
+    <!-- Collapse--------- -->
+
+    <div class="">
+        <main class="md:p-5 p-4 bg-light-blue container mx-auto" x-data="accordionList">
+            <div class="flex justify-center items-start my-2">
+                <div class="w-full my-1">
+                    <div class="flex items-center mb-6 justify-between">
+                        <h2 class="font-semibold text-2xl mb-2 ">BestMoney Trending List</h2>
+                        <button @click="collapseAll()"
+                            class="color-darkGreen2 font-medium text-lg flex items-center gap-3">Collapse all <i
+                                class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+                    </div>
+                    <ul class="flex flex-col">
+                        <!-- Render Cards Dynamically -->
+                        <template x-for="(card, index) in cards" :key="index">
+                            <li class="bg-white my-2" x-data="accordion(index + 1)">
+                                <h2 @click="handleClick()"
+                                    class="flex bg-[#eeeeee] rounded-sm flex-row justify-between items-center font-semibold px-8 py-5 cursor-pointer">
+                                    <div class="flex items-center gap-4">
+                                        <span
+                                            class="w-12 h-12 rounded-full back-green text-white text-2xl flex items-center justify-center"
+                                            x-text="index + 1"></span>
+                                        <span class="text-xl" x-text="card.title"></span>
+                                    </div>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-angle-down transform transition-transform duration-500 text-3xl color-darkGreen2"></i>
+                                </h2>
+                                <div x-ref="tab" :style="handleToggle()"
+                                    class="border-4 border-[#eeeeee] overflow-hidden max-h-0 duration-500 transition-all">
+                                    <div class="md:m-8 m-3">
+                                        <div class="flex lg:flex-row flex-col items-start gap-10 justify-start">
+                                            <img :src="card.mainImage"
+                                                class="rounded-md h-[290px] w-[535px] object-cover" alt="">
+                                            <div>
+                                                <a :href="card.mainLink" class="hover:underline">
+                                                    <h1 class="text-2xl font-bold" x-html="card.mainHeading"></h1>
+                                                </a>
+                                                <p class="pt-4 color-gray pb-8" x-text="card.date"></p>
+                                                <a :href="card.mainLink">
+                                                    <button
+                                                        class="flex w-full md:w-auto text-center justify-center items-center gap-2 px-4 py-3 border border-zinc-700 color-darkGreen2 font-semibold">
+                                                        View Online Banking <i class="fa-solid fa-arrow-right"></i>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-8">
+                                            <template x-for="item in card.gridItems">
+                                                <div class="flex items-start gap-4">
+                                                    <div
+                                                        class="h-[90px] flex items-center justify-center object-cover rounded-md w-[15rem]">
+                                                        <img :src="item.image" class="rounded-md w-full" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h2 class="text-lg font-semibold leading-6" x-text="item.title">
+                                                        </h2>
+                                                        <p class="text-xs color-gray pt-3" x-text="item.author"></p>
+                                                        <p class="text-xs color-gray" x-text="item.itemDate"></p>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- financial decisions------------- -->
+
+    <div class="container mx-auto px-5 my-16">
+        <h2 class="md:text-[43px] leading-tight tracking-wide text-2xl max-w-lg mx-auto font-37 text-center">Take the hard work out of financial
+            decisions
+        </h2>
+        <div class="grid grid-cols-3 gap-12 mt-16">
+            <div class="flex items-center justify-center flex-col gap-4 text-center">
+                <div class="flex items-center justify-start w-[296px] h-[243px]">
+                    <img src="./Docs/Assets/Images/home/Compare-image.svg" class="w-full object-cover" alt="">
+                </div>
+                <h2 class="text-2xl mt-5 font-37">Compare</h2>
+                <p class="text-lg font-34 text-zinc-600 tracking-tight">Understand your options with our comparison charts that feature essential information
+                    from top providers about loans, mortgages, banking and more.</p>
+            </div>
+            <div class="flex items-center justify-center flex-col gap-4 text-center">
+                <div class="flex items-center justify-start w-[296px] h-[243px]">
+                    <img src="./Docs/Assets/Images/home/Discover-image.svg" class="w-full object-cover" alt="">
+                </div>
+                <h2 class="text-2xl mt-5 font-37">Discover</h2>
+                <p class="text-lg font-34 text-zinc-600 tracking-tight">Gain insights about financial decision making with our easy to understand expert
+                    reviews and guides. </p>
+            </div>
+            <div class="flex items-center justify-center flex-col gap-4 text-center">
+                <div class="flex items-center justify-start w-[296px] h-[243px]">
+                    <img src="./Docs/Assets/Images/home/Shop-image.svg" class="w-full object-cover" alt="">
+                </div>
+                <h2 class="text-2xl mt-5 font-37">Shop</h2>
+                <p class="text-lg font-34 text-zinc-600 tracking-tight">Select from tailored offers from a rich inventory of top providers powered by our
+                    matching technology. </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer================== -->
+
+    <footer class="back-darkGreen text-white lg:py-20 py-16 lg:px-20 px-5 lg:flex items-start justify-center gap-20">
+        <div class="max-w-[25rem] w-full mb-10">
+            <a href="./index.html">
+                <img src="./Docs/Assets/Images/home/footerLogo.svg" class="mb-12" alt="">
+            </a>
+            <p>Copyright © 2009-2024 Natural Intelligence Ltd. All Rights Reserved. <br>
+                By using our content, products & services you agree to our <strong><a href="">Terms of Use</a></strong>
+                and <strong><a href=""> Privacy Policy</a></strong> .
+                <strong><a href=""> NMLS Consumer Access</a></strong>
+            </p> <br>
+            <p>
+                Bestmoney is a dba of Natural Intelligence Technologies Inc.<br>
+                Natural Intelligence Technologies Inc. NMLS # 2084135 <br>
+                CT: Mortgage Broker only, not a mortgage lender or mortgage correspondent lender.
+            </p> <br>
+            <strong><a href="">Don't Sell My Personal Information</a></strong>
+        </div>
+        <div class="h-[2px] lg:hidden w-full bg-zinc-50 opacity-30 my-8"></div>
+
+        <div class="max-w-[50rem] w-full">
+            <ul class="flex lg:flex-row flex-col lg:items-center gap-5 font-semibold">
+                <li><a class="hover:opacity-70 transition-all duration-500" href="">About Us</a></li>
+                <li><a class="hover:opacity-70 transition-all duration-500" href="">Cookie Policy</a></li>
+                <li><a class="hover:opacity-70 transition-all duration-500" href="">Terms Of Use</a></li>
+                <li><a class="hover:opacity-70 transition-all duration-500" href="">Partner With Us</a></li>
+                <li><a class="hover:opacity-70 transition-all duration-500" href="">Privacy Policy</a></li>
+                <li><a class="hover:opacity-70 transition-all duration-500" href="">Contact</a></li>
+            </ul>
+            <p class="mt-10">
+                Designed to help users make confident decisions online, this website contains information about a wide
+                range of products and services. Certain details, including but not limited to prices and special offers,
+                are provided to us directly from our partners and are dynamic and subject to change at any time without
+                prior notice. Though based on meticulous research, the information we share does not constitute legal or
+                professional advice or forecast, and should not be treated as such. Company listings on this site DO NOT
+                imply endorsement. <br>
+
+                We are not an investment adviser, loan provider, or a broker and we do not offer loans or mortgages
+                directly to end users, but only allows users to match with lending partners and platforms that may
+                extend a loan. All loan approval decisions and terms are determined by the loan providers at the time of
+                your application with them. Any matching request submitted through our website does not constitute a
+                loan application and you will have to submit a loan application to the respective lender before the
+                lender provides you with an actual offer. We do not warrant that you will be approved for a loan, nor
+                that you will be offered a loan with the same terms presented on our website. <br>
+
+                Insurance services are offered through Natural Intelligence Technologies Inc., a licensed insurance
+                producer (NPN: 19016703). Services may not be available in all states. Additional licensing information
+                can be found <strong><a href="" class="underline">here</a></strong>. Insurance products are governed by
+                the terms in the applicable insurance policy.
+                Approval for coverage, premiums, commissions and fees, and other policy obligations are the sole
+                responsibility of the underwriting insurer. The information on this site does not modify any insurance
+                policy terms in any way. <br>
+                Reproduction in whole or in part is strictly prohibited.
+            </p>
+
+            <div class="h-[2px] w-full bg-zinc-50 opacity-30 my-8"></div>
+
+            <p>
+                <span class="font-medium">Advertising Disclosure</span> <br><br>
+                This site is a free online resource that strives to offer helpful content and comparison features to our
+                visitors. We accept advertising compensation from companies that appear on the site, which may impact
+                the location and order in which brands (and/or their products) are presented, and may also impact the
+                score that is assigned to it. Company listings on this page DO NOT imply endorsement. We do not feature
+                all providers on the market. Except as expressly set forth in our Terms of Use, all representations and
+                warranties regarding the information presented on this page are disclaimed. The information, including
+                pricing, which appears on this site is subject to change at any time
+            </p>
+
+        </div>
+    </footer>
+</body>
+
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('accordionList', () => ({
+            cards: [
+                {
+                    title: 'Online Banking',
+                    mainImage: './Docs/Assets/Images/home/Slider/img1.webp',
+                    mainLink: '#',
+                    mainHeading: 'Best Online Banks of 2024 <br> Stay on top of your finances',
+                    date: 'Sep, 2024',
+                    gridItems: [
+                        {
+                            image: './Docs/Assets/Images/home/Slider/img11.webp',
+                            title: 'How To Switch Banks: A Step-by-Step Guide',
+                            author: 'Su Guillory',
+                            itemDate: 'Jul, 2024',
+                        },
+                        {
+                            image: './Docs/Assets/Images/home/Slider/img12.webp',
+                            title: 'How To Switch Banks: A Step-by-Step Guide',
+                            author: 'Su Guillory',
+                            itemDate: 'Jul, 2024',
+                        },
+                        {
+                            image: './Docs/Assets/Images/home/Slider/img13.svg',
+                            title: 'How To Switch Banks: A Step-by-Step Guide',
+                            author: 'Su Guillory',
+                            itemDate: 'Jul, 2024',
+                        },
+                    ],
+                },
+                {
+                    title: 'Car Insurance',
+                    mainImage: './Docs/Assets/Images/home/Slider/img1.webp',
+                    mainLink: '#',
+                    mainHeading: 'Best Car Insurance Quotes of 2024 <br> Drive with confidence knowing you’re covered',
+                    date: 'Sep, 2024',
+                    gridItems: [
+                        {
+                            image: './Docs/Assets/Images/home/Slider/img11.webp',
+                            title: 'How To Switch Banks: A Step-by-Step Guide',
+                            author: 'Su Guillory',
+                            itemDate: 'Jul, 2024',
+                        },
+                        {
+                            image: './Docs/Assets/Images/home/Slider/img12.webp',
+                            title: 'How To Switch Banks: A Step-by-Step Guide',
+                            author: 'Su Guillory',
+                            itemDate: 'Jul, 2024',
+                        },
+                        {
+                            image: './Docs/Assets/Images/home/Slider/img13.svg',
+                            title: 'How To Switch Banks: A Step-by-Step Guide',
+                            author: 'Su Guillory',
+                            itemDate: 'Jul, 2024',
+                        },
+                    ],
+                },
+
+            ],
+            collapseAll() {
+                this.cards.forEach((_, index) => this.$store.accordion.tab = 0);
+            }
+        }));
+
+        Alpine.store('accordion', { tab: 0 });
+
+        Alpine.data('accordion', (idx) => ({
+            idx: -1,
+            init() {
+                this.idx = idx;
+            },
+            handleClick() {
+                this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+            },
+            handleRotate() {
+                return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+            },
+            handleToggle() {
+                return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+            }
+        }));
+    });
+</script>
+
+</html>

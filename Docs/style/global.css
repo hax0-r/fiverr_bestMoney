@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: HurmeGeometricSans3SemiBold4;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black-color: #171717;
+    --white-color: #f7f7f7;
+    --green-color: #16ca92;
+    --darkGreen-color: #225447;
+    --darkGreen2-color: #09553d;
+    --gray-color: #717171;
+}
+
+@font-face {
+    font-family: HurmeGeometricSans3SemiBold4;
+    src: url("//umbrella.s3.naturalint.com/xsite/ui/fonts/HurmeGeometricSans3/hurme-geometric-sans-3-regular.woff");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal
+}
+
+.font-34 {
+    font-family: HurmeGeometricSans3SemiBold4;
+}
+
+@font-face {
+    font-family: HurmeGeometricSans3SemiBold6;
+    src: url("//umbrella.s3.naturalint.com/xsite/ui/fonts/HurmeGeometricSans3/hurme-geometric-sans-3-semibold.woff");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal
+}
+
+.font-36 {
+    font-family: HurmeGeometricSans3SemiBold6;
+}
+
+@font-face {
+    font-family: HurmeGeometricSans3SemiBold7;
+    src: url("//umbrella.s3.naturalint.com/xsite/ui/fonts/HurmeGeometricSans3/hurme-geometric-sans-3-bold.woff");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal
+}
+
+.font-37 {
+    font-family: HurmeGeometricSans3SemiBold7;
+}
+
+@font-face {
+    font-family: hurmegeometricsans_no3_64;
+    src: url("//umbrella.s3.naturalint.com/xsite/ui/fonts/HurmeGeometricSans3/hurme-geometric-sans-3-regular.woff");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal
+}
+
+.font-64 {
+    font-family: hurmegeometricsans_no3_64;
+}
+
+@font-face {
+    font-family: hurmegeometricsans_no3_66;
+    src: url("//umbrella.s3.naturalint.com/xsite/ui/fonts/HurmeGeometricSans3/hurme-geometric-sans-3-semibold.woff");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal
+}
+
+.font-66 {
+    font-family: hurmegeometricsans_no3_66;
+}
+
+@font-face {
+    font-family: hurmegeometricsans_no3_67;
+    src: url("//umbrella.s3.naturalint.com/xsite/ui/fonts/HurmeGeometricSans3/hurme-geometric-sans-3-bold.woff");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal
+}
+
+.font-67 {
+    font-family: hurmegeometricsans_no3_67;
+}
+
+.color-black {
+    color: var(--black-color);
+}
+
+.color-darkGreen {
+    color: var(--darkGreen-color);
+}
+
+.back-darkGreen {
+    background: var(--darkGreen-color);
+}
+
+.color-green {
+    color: var(--green-color);
+}
+
+.back-green {
+    background: var(--green-color);
+}
+
+.color-darkGreen2 {
+    color: var(--darkGreen2-color);
+}
+
+.back-darkGreen2 {
+    background: var(--darkGreen2-color);
+}
+
+.color-gray {
+    color: var(--gray-color);
+}
+
+.back-gray {
+    background: var(--gray-color);
+}
