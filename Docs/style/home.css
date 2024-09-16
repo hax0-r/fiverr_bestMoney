@@ -40,7 +40,7 @@
     transform: skewX(-35deg);
     position: absolute;
     top: 0px;
-    z-index: 9;
+    z-index: -9;
 }
 
 .rangeBar {
@@ -57,10 +57,9 @@
     /* z-index: -9; */
 }
 
-.rangeBar::after {
+.rangeBar::before {
     content: '';
     width: 300px;
-    z-index: -10;
     height: 100%;
     position: absolute;
     top: 0;
@@ -124,12 +123,12 @@
     background-color: #fff;
     opacity: 0.8;
     border: 0.9px solid #e3e3e2;
-    padding: 5px 16px 9px;
+    padding:  3px 20px;
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: -0.22px;
     font-weight: 400;
-    transform: translateX(-50%);
+    transform: translateX(-0%);
     white-space: nowrap;
 }
 
@@ -142,13 +141,4 @@
 
 ._9ALcc-fS .range-wrapper {
     position: relative;
-}
-
-input[type="range" i] {
-    appearance: auto;
-    cursor: default;
-    color: light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
-    padding: initial;
-    border: initial;
-    margin: 2px;
 }
