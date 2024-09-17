@@ -57,17 +57,26 @@
     /* z-index: -9; */
 }
 
-.rangeBar::before {
-    content: '';
-    width: 300px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 16%;
-    background-color: white;
-    transform: skewX(-35deg);
-
+@media screen and (max-width:768px) {
+    .rangeBar {
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+    }
 }
+
+@media screen and (min-width:768px) {
+    .rangeBar::before {
+        content: '';
+        width: 300px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 16%;
+        background-color: white;
+        transform: skewX(-35deg);
+    }
+}
+
 
 ._9ALcc-fS {
     background-image: url(/Docs/Assets/Images/home/rangeBar.svg);
@@ -78,16 +87,6 @@
     max-width: 409px;
     position: relative;
     z-index: 99;
-}
-
-._9ALcc-fS .x6CMECqf {
-    position: absolute;
-    /* bottom: -30px; */
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: -0.2px;
-    color: #a4b3ae;
-    font-weight: 400;
 }
 
 ._9ALcc-fS .yf5vDmKy {

@@ -17,7 +17,7 @@
 
 <body>
     <nav class="bg-white">
-        <div class="flex h-16 lg:px-0 px-8 items-center justify-between container mx-auto">
+        <div class="flex h-16 lg:px-16 px-8 items-center justify-between  mx-auto">
             <img src="./Docs/Assets/Images/home/logo.svg" alt="log" class="h-6">
             <ul class="items-center md:flex hidden gap-7 text-[17px]">
                 <li><a href="./about.html">About Us</a></li>
@@ -268,7 +268,7 @@
 
     <div class="container mx-auto px-5 my-16">
         <h2
-            class="md:text-[43px] relative flex items-center justify-center leading-tight tracking-wide text-2xl max-w-lg mx-auto font-37 text-center bgSlah">
+            class="md:text-[43px] relative flex items-center justify-center leading-tight tracking-wide text-3xl max-w-lg mx-auto font-37 text-center bgSlah">
             Take the
             hard work out of financial
             decisions
@@ -308,11 +308,12 @@
 
     <!-- Range Bar================== -->
 
-    <div class="p-4">
+    <div class="md:p-4">
 
         <div class="rangeBar p-8 py-10 ">
-            <div class="md:pl-24 max-w-2xl z-10">
-                <h2 class="font-37 text-[2.6rem] leading-tight pb-3 z-30 ">Compare personal loan rates to find the best
+            <div class="md:pl-24 max-w-2xl w-full z-10">
+                <h2 class="font-37 md:text-[2.6rem] text-3xl leading-tight pb-3 z-30 ">Compare personal loan rates to
+                    find the best
                     APR</h2>
                 <p class="text-[1.4rem]">How much would you like to borrow? (An estimate is ok)</p>
 
@@ -325,9 +326,10 @@
                     <span class="lQ68japg">$100,000</span>
                 </div>
 
-                <button class="back-darkGreen mt-14 py-3 text-white font-36 text-xl px-32 rounded-md">Get my
+                <button class="back-darkGreen mt-14 py-3 text-white font-36 text-xl px-32 text-nowrap rounded-md">Get my
                     rate</button>
-                <P class="text-lg pt-4">Checking rates <strong class="font-37">won't</strong> affect your credit score.
+                <P class="text-lg pt-4 text-center md:text-start">Checking rates <strong class="font-37">won't</strong>
+                    affect your credit score.
                 </P>
             </div>
         </div>
@@ -339,72 +341,80 @@
     <!-- slider=================== -->
 
 
-    <h2 class="md:text-[43px] relative flex items-center justify-center leading-tight tracking-wide text-2xl max-w-lg mx-auto font-37 text-center mt-10">
-        Explore more from BestMoney
-    </h2>
+    <div class="relative">
+        <div class="bg-[#e8faff] h-[27rem] w-full absolute top-0 left-0"></div>
 
-    <div class="max-w-7xl mx-auto mt-10 mb-20">
-        <div class="relative overflow-hidden">
-            <!-- Slider Container -->
-            <div id="slider" class="flex transition-transform duration-500 ease-in-out overflow-hidden">
-                <!-- Slider Items -->
-                <div class="w-1/5 p-4">
-                    <img src="/Docs/Assets/Images/home/explore1.webp" alt="Home loans" class="rounded-lg mx-auto">
-                    <p class="text-center mt-4 font-36 text-xl">Home loans</p>
+        <h2
+            class="md:text-[43px] relative flex items-center justify-center leading-tight tracking-wide text-3xl max-w-lg mx-auto font-37 text-center pt-16 mt-20">
+            Explore more from BestMoney
+        </h2>
+
+        <div class="max-w-7xl mx-auto mt-10 mb-20">
+            <div class="relative overflow-hidden">
+                <!-- Slider Container -->
+                <div id="slider" class="flex transition-transform duration-500 ease-in-out overflow-hidden">
+                    <!-- Slider Items -->
+                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                        <img src="/Docs/Assets/Images/home/explore1.webp" alt="Home loans" class=" hover:shadow-xl transition-all rounded-lg mx-auto">
+                        <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Home loans</p>
+                    </a>
+                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                        <img src="/Docs/Assets/Images/home/explore1.webp" alt="Home loans refinance"
+                            class="rounded-lg mx-auto hover:shadow-xl transition-all">
+                        <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Home loans refinance</p>
+                    </a>
+                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                        <img src="/Docs/Assets/Images/home/explore1.webp" alt="Private student loans"
+                            class="rounded-lg mx-auto hover:shadow-xl transition-all">
+                        <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Private student loans</p>
+                    </a>
+                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                        <img src="/Docs/Assets/Images/home/explore1.webp" alt="Student loan refinance"
+                            class="rounded-lg mx-auto hover:shadow-xl transition-all">
+                        <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Student loan refinance</p>
+                    </a>
+                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                        <img src="/Docs/Assets/Images/home/explore1.webp" alt="Personal loans"
+                            class="rounded-lg mx-auto hover:shadow-xl transition-all">
+                        <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Personal loans</p>
+                    </a>
+                    <!-- Additional items for testing -->
+                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                        <img src="/Docs/Assets/Images/home/explore1.webp" alt="Car loans" class="rounded-lg mx-auto hover:shadow-xl transition-all">
+                        <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Car loans</p>
+                    </a>
+                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                        <img src="/Docs/Assets/Images/home/explore1.webp" alt="Education loans"
+                            class="rounded-lg mx-auto hover:shadow-xl transition-all">
+                        <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Education loans</p>
+                    </a>
+                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                        <img src="/Docs/Assets/Images/home/explore1.webp" alt="Business loans"
+                            class="rounded-lg mx-auto hover:shadow-xl transition-all">
+                        <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Business loans</p>
+                    </a>
+                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                        <img src="/Docs/Assets/Images/home/explore1.webp" alt="Travel loans" class="rounded-lg mx-auto hover:shadow-xl transition-all">
+                        <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Travel loans</p>
+                    </a>
+                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                        <img src="/Docs/Assets/Images/home/explore1.webp" alt="Personal development loans"
+                            class="rounded-lg mx-auto hover:shadow-xl transition-all">
+                        <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Personal development loans</p>
+                    </a>
                 </div>
-                <div class="w-1/5 p-4">
-                    <img src="/Docs/Assets/Images/home/explore1.webp" alt="Home loans refinance"
-                        class="rounded-lg mx-auto">
-                    <p class="text-center mt-4 font-36 text-xl">Home loans refinance</p>
-                </div>
-                <div class="w-1/5 p-4">
-                    <img src="/Docs/Assets/Images/home/explore1.webp" alt="Private student loans"
-                        class="rounded-lg mx-auto">
-                    <p class="text-center mt-4 font-36 text-xl">Private student loans</p>
-                </div>
-                <div class="w-1/5 p-4">
-                    <img src="/Docs/Assets/Images/home/explore1.webp" alt="Student loan refinance"
-                        class="rounded-lg mx-auto">
-                    <p class="text-center mt-4 font-36 text-xl">Student loan refinance</p>
-                </div>
-                <div class="w-1/5 p-4">
-                    <img src="/Docs/Assets/Images/home/explore1.webp" alt="Personal loans" class="rounded-lg mx-auto">
-                    <p class="text-center mt-4 font-36 text-xl">Personal loans</p>
-                </div>
-                <!-- Additional items for testing -->
-                <div class="w-1/5 p-4">
-                    <img src="/Docs/Assets/Images/home/explore1.webp" alt="Car loans" class="rounded-lg mx-auto">
-                    <p class="text-center mt-4 font-36 text-xl">Car loans</p>
-                </div>
-                <div class="w-1/5 p-4">
-                    <img src="/Docs/Assets/Images/home/explore1.webp" alt="Education loans" class="rounded-lg mx-auto">
-                    <p class="text-center mt-4 font-36 text-xl">Education loans</p>
-                </div>
-                <div class="w-1/5 p-4">
-                    <img src="/Docs/Assets/Images/home/explore1.webp" alt="Business loans" class="rounded-lg mx-auto">
-                    <p class="text-center mt-4 font-36 text-xl">Business loans</p>
-                </div>
-                <div class="w-1/5 p-4">
-                    <img src="/Docs/Assets/Images/home/explore1.webp" alt="Travel loans" class="rounded-lg mx-auto">
-                    <p class="text-center mt-4 font-36 text-xl">Travel loans</p>
-                </div>
-                <div class="w-1/5 p-4">
-                    <img src="/Docs/Assets/Images/home/explore1.webp" alt="Personal development loans"
-                        class="rounded-lg mx-auto">
-                    <p class="text-center mt-4 font-36 text-xl">Personal development loans</p>
-                </div>
+
+                <!-- Controls -->
+                <button id="prev"
+                    class="absolute top-[40%] left-0 transform -translate-y-1/2 bg-white p-3 w-12 h-12  rounded-full shadow-md hover:bg-gray-100 disabled:opacity-50"
+                    disabled>
+                    <i class="fa-solid fa-arrow-right rotate-180"></i>
+                </button>
+                <button id="next"
+                    class="absolute top-[40%] right-0 transform -translate-y-1/2 bg-white p-3 w-12 h-12  rounded-full shadow-md hover:bg-gray-100">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
-
-            <!-- Controls -->
-            <button id="prev"
-                class="absolute top-[40%] left-0 transform -translate-y-1/2 bg-white p-3 w-12 h-12  rounded-full shadow-md hover:bg-gray-100 disabled:opacity-50"
-                disabled>
-                <i class="fa-solid fa-arrow-right rotate-180"></i>
-            </button>
-            <button id="next"
-                class="absolute top-[40%] right-0 transform -translate-y-1/2 bg-white p-3 w-12 h-12  rounded-full shadow-md hover:bg-gray-100">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
         </div>
     </div>
 
@@ -530,20 +540,34 @@
     const prev = document.getElementById('prev');
     const next = document.getElementById('next');
 
-    const totalItems = slider.children.length;
-    const itemsPerPage = 5;
+    let totalItems = slider.children.length;
+    let itemsPerPage = getItemsPerPage(); // Dynamically get the items per page based on screen size
     let currentIndex = 0;
 
-    // Set the initial width of the slider based on the number of items
-    slider.style.width = `${(totalItems / itemsPerPage) * 100}%`;
+    // Calculate the total number of slides
+    let totalSlides = Math.ceil(totalItems / itemsPerPage);
+
+    // Set the initial width of the slider
+    updateSliderWidth();
+
+    // Add event listener to handle resizing
+    window.addEventListener('resize', () => {
+        itemsPerPage = getItemsPerPage();
+        totalSlides = Math.ceil(totalItems / itemsPerPage);
+        updateSliderWidth();
+        slider.style.transform = `translateX(0)`; // Reset to the first slide on resize
+        currentIndex = 0;
+        prev.disabled = true;
+        next.disabled = false;
+    });
 
     next.addEventListener('click', () => {
-        if (currentIndex < totalItems / itemsPerPage - 1) {
+        if (currentIndex < totalSlides - 1) {
             currentIndex++;
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            slider.style.transform = `translateX(-${currentIndex * (100 / totalSlides)}%)`;
             prev.disabled = false;
         }
-        if (currentIndex >= totalItems / itemsPerPage - 1) {
+        if (currentIndex >= totalSlides - 1) {
             next.disabled = true;
         }
     });
@@ -551,13 +575,30 @@
     prev.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            slider.style.transform = `translateX(-${currentIndex * (100 / totalSlides)}%)`;
             next.disabled = false;
         }
         if (currentIndex === 0) {
             prev.disabled = true;
         }
     });
+
+    function getItemsPerPage() {
+        const screenWidth = window.innerWidth;
+        if (screenWidth >= 1000) {
+            return 5;
+        } else if (screenWidth >= 768) {
+            return 3;
+        } else if (screenWidth >= 640) {
+            return 2;
+        } else {
+            return 1;
+        }
+    }
+
+    function updateSliderWidth() {
+        slider.style.width = `${totalItems * (100 / itemsPerPage)}%`;
+    }
 
 
 
