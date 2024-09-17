@@ -124,7 +124,7 @@
     background: var(--gray-color);
 }
 
-.fadeIn{
+.fadeIn {
     animation: fadeIn 1s;
 }
 
@@ -137,4 +137,31 @@
         opacity: 1;
     }
 
+}
+
+.myShadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hoverMyShadow:hover {
+    box-shadow: rgba(0, 182, 122, 0.2) 0px 7px 29px 0px;
+}
+
+#dropDownNav {
+    div {
+        display: none;
+        opacity: 0;
+        top: 4.1rem;
+    }
+
+    &:hover {
+        div {
+            opacity: 1;
+            display: block;
+        }
+
+        i {
+            transform: rotate(180deg);
+        }
+    }
 }
