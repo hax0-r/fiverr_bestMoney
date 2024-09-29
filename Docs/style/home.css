@@ -1,30 +1,45 @@
-.heroBg {
-    background: linear-gradient(98.62deg, #225447 -11.29%, rgba(34, 84, 71, 0.840843) 4.37%, rgba(34, 84, 71, 0) 87.14%, rgba(34, 84, 71, 0) 96.56%), #16ca92;
-    background-repeat: no-repeat;
-    background-position: top center;
+@media screen and (min-width:769px) {
+    .heroBg {
+        background: linear-gradient(98.62deg, #225447 -11.29%, rgba(34, 84, 71, 0.840843) 4.37%, rgba(34, 84, 71, 0) 87.14%, rgba(34, 84, 71, 0) 96.56%), #16ca92;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
 }
 
-.heroBg:before {
-    content: '';
-    border-style: solid;
-    border-width: 235px 163px 0 0;
-    border-color: rgba(22, 202, 146, 0.4) transparent transparent transparent;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 0;
+@media screen and (max-width:769px) {
+    .heroBg {
+        background: linear-gradient(95.65deg, rgba(34, 84, 71, 0.3) -11.35%, rgba(34, 84, 71, 0) 77.99%), #16ca92;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
 }
 
 
-.heroBg:after {
-    content: '';
-    border-style: solid;
-    border-width: 0 0 410px 283px;
-    border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
+@media screen and (min-width:769px) {
+    .heroBg:before {
+        content: '';
+        border-style: solid;
+        border-width: 235px 163px 0 0;
+        border-color: rgba(22, 202, 146, 0.4) transparent transparent transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+}
+
+
+@media screen and (min-width:769px) {
+    .heroBg:after {
+        content: '';
+        border-style: solid;
+        border-width: 0 0 410px 283px;
+        border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
 }
 
 .homeLoneClipPath {
@@ -122,7 +137,7 @@
     background-color: #fff;
     opacity: 0.8;
     border: 0.9px solid #e3e3e2;
-    padding:  3px 20px;
+    padding: 3px 20px;
     text-align: center;
     font-size: 28px;
     letter-spacing: -0.22px;
