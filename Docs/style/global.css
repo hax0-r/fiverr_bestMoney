@@ -190,3 +190,7 @@
         display: block;
     }
 }
+
+img,a,button,iframe,::placeholder{
+    user-select: none;
+}
