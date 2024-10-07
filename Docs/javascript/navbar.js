@@ -1,7 +1,9 @@
 const navbarContent = `
     <nav class="bg-white border-zinc-300 border-y">
       <div class="flex h-16 lg:px-16 px-8 items-center justify-between mx-auto">
+    <a href="/index.html">
         <img src="/Docs/Assets/Images/home/logo.svg" alt="log" class="h-6">
+    </a>
         <ul class="items-center md:flex hidden gap-7 text-[17px]">
           <li class="flex items-center gap-2 cursor-pointer relative py-5" id="dropDownNav">
             Rates <i class="fa-solid fa-angle-down mt-1 text-zinc-700 text-sm transition-all duration-300"></i>

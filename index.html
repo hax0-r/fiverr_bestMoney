@@ -23,9 +23,23 @@
                 <li><a href="./about.html">About Us</a></li>
                 <li><a href="./partner-with-us.html">Partner with Us</a></li>
             </ul>
-            <i class="fa-solid fa-bars text-2xl md:hidden"></i>
+            <i class="fa-solid fa-bars text-2xl md:hidden" id="openNav"></i>
         </div>
     </nav>
+
+
+
+    <div class="w-full h-screen bg-[#000000a8] fixed bottom-0 z-50 fadeIn left-0 transition-all" id="overlayresNav" style="display: none;"></div>
+    <div class="fixed top-0 right-0 h-screen bg-white text-black font-36 z-50 transition-all duration-500" id="responsiveNav" style="width: 0rem;">
+      <div class="p-10 relative">
+        <i class="fa-solid fa-x absolute right-5 cursor-pointer" id="closeNav"></i>
+        <ul class="flex flex-col text-[17px]">
+          
+          <li class="py-5"><a href="/about.html">About Us</a></li>
+          <li class="py-5"><a href="/partner-with-us.html">Partner with Us</a></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- hero Section -->
     <div class=" py-16 heroBg flex w-full items-center flex-col justify-center relative">
@@ -192,15 +206,15 @@
         </div>
 
         <div class="w-full gap-2 mx-auto grid grid-cols-2 md:hidden p-5 mt-5">
-            <a href="#"
+            <a href="/BestMoneyTrendingList/Investments.html"
                 class="relative h-14 px-2 py-4  flex items-center gap-2.5 w-full overflow-hidden rounded-lg bg-white  hover:shadow-2xl transition-all duration-300 cursor-pointer">
-                <img src="/Docs/Assets/Images/home/key.svg" alt="" class=" h-6 ">
-                <h2 class=" leading-tight">Mortgage Purchase</h2>
+                <img src="/Docs/Assets/Images/home/Investments.svg" alt="" class=" h-6 ">
+                <h2 class=" leading-tight">Investments</h2>
             </a>
-            <a href="#"
+            <a href="/BestMoneyTrendingList/Credit-Cards.html"
                 class="relative h-14 px-2 py-4  flex items-center gap-2.5 w-full overflow-hidden rounded-lg bg-white  hover:shadow-2xl transition-all duration-300 cursor-pointer">
-                <img src="/Docs/Assets/Images/home/mort.svg" alt="" class=" h-6 ">
-                <h2 class=" leading-tight">Mortgage Refinance</h2>
+                <img src="/Docs/Assets/Images/home/cards.svg" alt="" class=" h-6 ">
+                <h2 class=" leading-tight">Credits Cards</h2>
             </a>
             <a href="./BestMoneyTrendingList/personal-loans.html"
                 class="relative h-14 px-2 py-4  flex items-center gap-2.5 w-full overflow-hidden rounded-lg bg-white  hover:shadow-2xl transition-all duration-300 cursor-pointer">
@@ -446,7 +460,7 @@
                     <span class="lQ68japg">$100,000</span>
                 </div>
 
-                <button class="back-darkGreen mt-14 py-3 text-white font-36 text-xl px-32 text-nowrap rounded-md">Get my
+                <button class="back-darkGreen mt-14 py-3 text-white font-36 text-xl md:px-32 w-full md:w-auto text-nowrap rounded-md">Get my
                     rate</button>
                 <P class="text-lg pt-4 text-center md:text-start">Checking rates <strong class="font-37">won't</strong>
                     affect your credit score.
@@ -480,48 +494,48 @@
                             class=" hover:shadow-xl transition-all rounded-lg mx-auto">
                         <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Home loans</p>
                     </a>
-                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                    <a href="/BestMoneyTrendingList/home-insurance.html" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
                         <img src="/Docs/Assets/Images/home/explore1.webp" alt="Home loans refinance"
                             class="rounded-lg mx-auto hover:shadow-xl transition-all">
                         <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Home loans refinance</p>
                     </a>
-                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                    <a href="/BestMoneyTrendingList/StudentLoan.html" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
                         <img src="/Docs/Assets/Images/home/explore1.webp" alt="Private student loans"
                             class="rounded-lg mx-auto hover:shadow-xl transition-all">
                         <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Private student loans</p>
                     </a>
-                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                    <a href="/BestMoneyTrendingList/StudentLoan.html" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
                         <img src="/Docs/Assets/Images/home/explore1.webp" alt="Student loan refinance"
                             class="rounded-lg mx-auto hover:shadow-xl transition-all">
                         <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Student loan refinance</p>
                     </a>
-                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                    <a href="/BestMoneyTrendingList/personal-loans.html" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
                         <img src="/Docs/Assets/Images/home/explore1.webp" alt="Personal loans"
                             class="rounded-lg mx-auto hover:shadow-xl transition-all">
                         <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Personal loans</p>
                     </a>
                     <!-- Additional items for testing -->
-                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                    <a href="/BestMoneyTrendingList/car-loans.html" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
                         <img src="/Docs/Assets/Images/home/explore1.webp" alt="Car loans"
                             class="rounded-lg mx-auto hover:shadow-xl transition-all">
                         <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Car loans</p>
                     </a>
-                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                    <a href="/BestMoneyTrendingList/StudentLoan.html" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
                         <img src="/Docs/Assets/Images/home/explore1.webp" alt="Education loans"
                             class="rounded-lg mx-auto hover:shadow-xl transition-all">
                         <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Education loans</p>
                     </a>
-                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                    <a href="/BestMoneyTrendingList/business-loans.html" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
                         <img src="/Docs/Assets/Images/home/explore1.webp" alt="Business loans"
                             class="rounded-lg mx-auto hover:shadow-xl transition-all">
                         <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Business loans</p>
                     </a>
-                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                    <a href="/BestMoneyTrendingList/Travel-Insurance.html" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
                         <img src="/Docs/Assets/Images/home/explore1.webp" alt="Travel loans"
                             class="rounded-lg mx-auto hover:shadow-xl transition-all">
                         <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Travel loans</p>
                     </a>
-                    <a href="#" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
+                    <a href="/BestMoneyTrendingList/online-banks.html" class="w-1/5 p-4 hover:-translate-y-3 duration-500  transition-all">
                         <img src="/Docs/Assets/Images/home/explore1.webp" alt="Personal development loans"
                             class="rounded-lg mx-auto hover:shadow-xl transition-all">
                         <p class="text-center mt-4 font-36 text-[1.4rem] leading-tight">Personal development loans</p>
@@ -551,6 +565,26 @@
 </body>
 
 <script>
+
+const openNav = document.getElementById("openNav");
+const responsiveNav = document.getElementById("responsiveNav");
+const overlayresNav = document.getElementById("overlayresNav");
+const closeNav = document.getElementById("closeNav");
+
+openNav.addEventListener("click", () => {
+    responsiveNav.style.width = "22rem";
+    overlayresNav.style.display = "block";
+});
+
+overlayresNav.addEventListener("click", () => {
+    responsiveNav.style.width = "0rem";
+    overlayresNav.style.display = "none";
+});
+
+closeNav.addEventListener("click", () => {
+    responsiveNav.style.width = "0rem";
+    overlayresNav.style.display = "none";
+});
 
 
     // heroSection
