@@ -4,8 +4,8 @@ const currentYear = new Date().getFullYear();
 const footerContent = `
         <footer class="back-darkGreen text-white lg:py-20 py-16 lg:px-20 px-5 lg:flex items-start justify-center gap-20">
             <div class="max-w-[25rem] w-full mb-10">
-                <a href="./index.html">
-                    <img src="./Docs/Assets/Images/home/footerLogo.svg" class="mb-12" alt="footer logo">
+                <a href="/index.html">
+                    <img src="/Docs/Assets/Images/home/footerLogo.svg" class="mb-12" alt="footer logo">
                 </a>
                 <p>Copyright © 2009-${currentYear} Natural Intelligence Ltd. All Rights Reserved. <br>
                     By using our content, products & services you agree to our <strong><a href="">Terms of Use</a></strong> 

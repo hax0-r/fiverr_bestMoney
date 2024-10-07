@@ -194,3 +194,7 @@
 img,a,button,iframe,::placeholder{
     user-select: none;
 }
+
+.active-tab {
+    border-bottom: 3px solid #16ca92;
+}
