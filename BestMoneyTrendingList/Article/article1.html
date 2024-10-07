@@ -51,107 +51,9 @@
         </div>
 
     </div>
-    <nav class="bg-white border-zinc-300 border-y">
-        <div class="flex h-16 lg:px-16 px-8 items-center justify-between mx-auto">
-            <img src="/Docs/Assets/Images/home/logo.svg" alt="log" class="h-6">
-            <ul class="items-center md:flex hidden gap-7 text-[17px]">
-                <li class="flex items-center gap-2 cursor-pointer relative py-5" id="dropDownNav">
-                    Rates <i class="fa-solid fa-angle-down mt-1 text-zinc-700 text-sm transition-all duration-300"></i>
 
-                    <div class="border w-60 border-zinc-400 absolute z-20 bg-white left-1 overflow-hidden fadeIn">
-                        <ul>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Today's Mortgage Rates</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Today's Refinance Rates</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Mortgage Calculator</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Refinance Calculator</li>
-                            </a>
-                        </ul>
-                    </div>
-                </li>
-                <li class="flex items-center gap-2 cursor-pointer relative py-5" id="dropDownNav">
-                    Compare <i
-                        class="fa-solid fa-angle-down mt-1 text-zinc-700 text-sm transition-all duration-300"></i>
-                    <div class="border w-48 border-zinc-400 absolute  bg-white left-1 overflow-hidden fadeIn z-20">
-                        <ul>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Purchase</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Refinance</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Home Equity</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">VA Refi (IRRRL)</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">FHA</li>
-                            </a>
-                        </ul>
-                    </div>
-                </li>
-                <li class="flex items-center gap-2 cursor-pointer relative py-5" id="dropDownNav">
-                    Learn <i class="fa-solid fa-angle-down mt-1 text-zinc-700 text-sm transition-all duration-300"></i>
 
-                    <div class="border w-48 border-zinc-400 absolute z-20 bg-white right-0 overflow-hidden fadeIn">
-                        <ul>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Articles</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Reviews</li>
-                            </a>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <i class="fa-solid fa-bars text-2xl md:hidden cursor-pointer" id="openNav"></i>
-        </div>
-    </nav>
-
-    <!-- responsive Navbar -->
-    <div class="w-full h-screen bg-[#000000a8] fixed bottom-0 z-50 fadeIn left-0 transition-all" id="overlayresNav"
-        style="display: none;"></div>
-    <div class="fixed top-0 right-0 h-screen bg-white text-black font-36 z-50 transition-all duration-500"
-        id="responsiveNav" style="width: 0rem;">
-        <div class="p-10 relative">
-            <i class="fa-solid fa-x absolute right-5 cursor-pointer" id="closeNav"></i>
-            <ul class="flex flex-col text-[17px]">
-                <li class=" items-center gap-2 cursor-pointer relative py-5" id="dropDownNav">
-                    Pet Type <i
-                        class="fa-solid fa-angle-down mt-1 text-zinc-700 text-sm transition-all duration-300"></i>
-
-                    <div class="border w-full border-zinc-400  mt-7 bg-white left-1 overflow-hidden fadeIn">
-                        <ul>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Dog</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Cats</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">Exotic Pets</li>
-                            </a>
-                            <a href="">
-                                <li class="px-5 py-3 hover:bg-zinc-200 transition-all">All Pets</li>
-                            </a>
-                        </ul>
-                    </div>
-
-                </li>
-                <li class="py-5"><a href="">Reviews</a></li>
-                <li class="py-5"><a href="">Learn</a></li>
-            </ul>
-        </div>
-    </div>
+    <div id="navbar"></div>
 
 
     <div
@@ -163,43 +65,70 @@
             <img src="/Docs/Assets/Images/Articles/img1.webp" class="max-w-[470px] ml-auto rounded-md w-full" alt="">
         </div>
     </div>
-    <div
-        class="max-w-7xl mx-auto px-5 mt-12 mb-8 flex lg:flex-row flex-col justify-center md:gap-10 gap-5">
+    <div class="max-w-7xl mx-auto px-5 mt-12 mb-8 flex lg:flex-row flex-col justify-center md:gap-10 gap-5">
         <div class="lg:max-w-[75%] w-full">
             <div class="flex items-center gap-4 mb-7 ">
                 <div class="h-[50px] w-[50px]">
-                    <img src="/Docs/Assets/Images/Articles/BestMoney-staff.svg" class=" rounded-full h-full w-full" alt="">
+                    <img src="/Docs/Assets/Images/Articles/BestMoney-staff.svg" class=" rounded-full h-full w-full"
+                        alt="">
                 </div>
                 <div class="flex flex-col">
                     <a href="#" class=" hover:underline font-36 leading-6 text-lg">Bestmoney Staff</a>
                     <a href="#" class=" hover:underline text-sm leading-5">Sep. 16, 2024 • 3 min read</a>
                 </div>
             </div>
-            <p>Because rising interest rates can make it more difficult to get and pay off loans, now is a good time to take action in several key financial areas. Taking out a new mortgage or refinancing your current mortgage to lock in low mortgage rates can save you significant amounts of money over the length of your loan.
+            <p>Because rising interest rates can make it more difficult to get and pay off loans, now is a good time to
+                take action in several key financial areas. Taking out a new mortgage or refinancing your current
+                mortgage to lock in low mortgage rates can save you significant amounts of money over the length of your
+                loan.
             </p>
             <h2 class="text-2xl font-37 mt-8">Interest Rate Increases in 2024</h2>
-            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a good time to take action in several key financial areas. Taking out a new mortgage or refinancing your current mortgage to lock in low mortgage rates can save you significant amounts of money over the length of your loan.
+            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a
+                good time to take action in several key financial areas. Taking out a new mortgage or refinancing your
+                current mortgage to lock in low mortgage rates can save you significant amounts of money over the length
+                of your loan.
             </p>
             <h2 class="text-2xl font-37 mt-8">Interest Rate Increases in 2024</h2>
-            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a good time to take action in several key financial areas. Taking out a new mortgage or refinancing your current mortgage to lock in low mortgage rates can save you significant amounts of money over the length of your loan.
+            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a
+                good time to take action in several key financial areas. Taking out a new mortgage or refinancing your
+                current mortgage to lock in low mortgage rates can save you significant amounts of money over the length
+                of your loan.
             </p>
             <h2 class="text-2xl font-37 mt-8">Interest Rate Increases in 2024</h2>
-            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a good time to take action in several key financial areas. Taking out a new mortgage or refinancing your current mortgage to lock in low mortgage rates can save you significant amounts of money over the length of your loan.
+            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a
+                good time to take action in several key financial areas. Taking out a new mortgage or refinancing your
+                current mortgage to lock in low mortgage rates can save you significant amounts of money over the length
+                of your loan.
             </p>
             <h2 class="text-2xl font-37 mt-8">Interest Rate Increases in 2024</h2>
-            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a good time to take action in several key financial areas. Taking out a new mortgage or refinancing your current mortgage to lock in low mortgage rates can save you significant amounts of money over the length of your loan.
+            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a
+                good time to take action in several key financial areas. Taking out a new mortgage or refinancing your
+                current mortgage to lock in low mortgage rates can save you significant amounts of money over the length
+                of your loan.
             </p>
             <h2 class="text-2xl font-37 mt-8">Interest Rate Increases in 2024</h2>
-            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a good time to take action in several key financial areas. Taking out a new mortgage or refinancing your current mortgage to lock in low mortgage rates can save you significant amounts of money over the length of your loan.
+            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a
+                good time to take action in several key financial areas. Taking out a new mortgage or refinancing your
+                current mortgage to lock in low mortgage rates can save you significant amounts of money over the length
+                of your loan.
             </p>
             <h2 class="text-2xl font-37 mt-8">Interest Rate Increases in 2024</h2>
-            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a good time to take action in several key financial areas. Taking out a new mortgage or refinancing your current mortgage to lock in low mortgage rates can save you significant amounts of money over the length of your loan.
+            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a
+                good time to take action in several key financial areas. Taking out a new mortgage or refinancing your
+                current mortgage to lock in low mortgage rates can save you significant amounts of money over the length
+                of your loan.
             </p>
             <h2 class="text-2xl font-37 mt-8">Interest Rate Increases in 2024</h2>
-            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a good time to take action in several key financial areas. Taking out a new mortgage or refinancing your current mortgage to lock in low mortgage rates can save you significant amounts of money over the length of your loan.
+            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a
+                good time to take action in several key financial areas. Taking out a new mortgage or refinancing your
+                current mortgage to lock in low mortgage rates can save you significant amounts of money over the length
+                of your loan.
             </p>
             <h2 class="text-2xl font-37 mt-8">Interest Rate Increases in 2024</h2>
-            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a good time to take action in several key financial areas. Taking out a new mortgage or refinancing your current mortgage to lock in low mortgage rates can save you significant amounts of money over the length of your loan.
+            <p class="pt-4">Because rising interest rates can make it more difficult to get and pay off loans, now is a
+                good time to take action in several key financial areas. Taking out a new mortgage or refinancing your
+                current mortgage to lock in low mortgage rates can save you significant amounts of money over the length
+                of your loan.
             </p>
         </div>
         <div class="lg:max-w-[25%] w-full lg:block hidden">
@@ -239,6 +168,7 @@
 
     <div id="dynamic-footer"></div>
     <script src="/Docs/javascript/footer.js"></script>
+    <script src="/Docs/javascript/navbar.js"></script>
 
 </body>
 <script>
