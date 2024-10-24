@@ -198,3 +198,23 @@ img,a,button,iframe,::placeholder{
 .active-tab {
     border-bottom: 3px solid #16ca92;
 }
+
+.navUnderLine {
+  position: relative;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.navUnderLine::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #000000;
+  transition: 200ms all;
+}
+.navUnderLine:hover::before {
+  width: 100%;
+}

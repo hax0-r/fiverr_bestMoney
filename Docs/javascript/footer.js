@@ -31,43 +31,43 @@ const footerContent = `
                     <li><a class="hover:opacity-70 transition-all duration-500" href="">Privacy Policy</a></li>
                     <li><a class="hover:opacity-70 transition-all duration-500" href="">Contact</a></li>
                 </ul>
-                <p class="mt-10">
-                    Designed to help users make confident decisions online, this website contains information about a wide
-                    range of products and services. Certain details, including but not limited to prices and special offers,
-                    are provided to us directly from our partners and are dynamic and subject to change at any time without
-                    prior notice. Though based on meticulous research, the information we share does not constitute legal or
-                    professional advice or forecast, and should not be treated as such. Company listings on this site DO NOT
-                    imply endorsement. <br>
-
-                    We are not an investment adviser, loan provider, or a broker and we do not offer loans or mortgages
-                    directly to end users, but only allows users to match with lending partners and platforms that may
-                    extend a loan. All loan approval decisions and terms are determined by the loan providers at the time of
-                    your application with them. Any matching request submitted through our website does not constitute a
-                    loan application and you will have to submit a loan application to the respective lender before the
-                    lender provides you with an actual offer. We do not warrant that you will be approved for a loan, nor
-                    that you will be offered a loan with the same terms presented on our website. <br>
-
-                    Insurance services are offered through Natural Intelligence Technologies Inc., a licensed insurance
-                    producer (NPN: 19016703). Services may not be available in all states. Additional licensing information
-                    can be found <strong><a href="" class="underline">here</a></strong>. Insurance products are governed by
-                    the terms in the applicable insurance policy.
-                    Approval for coverage, premiums, commissions and fees, and other policy obligations are the sole
-                    responsibility of the underwriting insurer. The information on this site does not modify any insurance
-                    policy terms in any way. <br>
-                    Reproduction in whole or in part is strictly prohibited.
-                </p>
+                    <p class="mt-10">
+        This website is designed to assist users in making informed decisions online by providing
+        information about a wide range of products and services. Certain details, including but not
+        limited to prices and special offers, are provided by our partners and are dynamic, meaning they
+        may change at any time without prior notice. While we strive for accuracy through diligent
+        research, the information shared on this site does not constitute legal, financial, or professional
+        advice and should not be interpreted as such. The appearance of a company or product on this
+        site does not imply endorsement. <br><br>
+        We are not an investment adviser, loan provider, or broker, and do not offer loans or mortgages
+        directly to end users. Instead, our platform allows users to connect with lending partners and
+        platforms that may offer loans. All loan approvals, terms, and conditions are determined solely
+        by the respective loan providers at the time of your application. Submitting a matching request
+        through our website does not constitute a formal loan application. You must submit a separate
+        loan application with the respective lender to receive a loan offer. We do not guarantee approval
+        for any loan, nor do we warrant that the loan terms presented on our site will match the actual
+        terms offered by the lender. <br><br>
+        Insurance services on this site are provided by Natural Intelligence Technologies Inc., a licensed
+        insurance producer (NPN: 19016703). Availability of services may vary by state. Additional
+        licensing information can be found within our site. Insurance products are governed by the
+        terms of the applicable insurance policy, and approval for coverage, premiums, commissions,
+        fees, and other policy obligations are determined by the underwriting insurer. The information
+        provided here does not alter or modify any insurance policy terms. <br><br>
+        Reproduction of any part of this website, in whole or in part, is strictly prohibited.
+    </p>
 
                 <div class="h-[2px] w-full bg-zinc-50 opacity-30 my-8"></div>
 
                 <p>
-                    <span class="font-medium">Advertising Disclosure</span> <br><br>
-                    This site is a free online resource that strives to offer helpful content and comparison features to our
-                    visitors. We accept advertising compensation from companies that appear on the site, which may impact
-                    the location and order in which brands (and/or their products) are presented, and may also impact the
-                    score that is assigned to it. Company listings on this page DO NOT imply endorsement. We do not feature
-                    all providers on the market. Except as expressly set forth in our Terms of Use, all representations and
-                    warranties regarding the information presented on this page are disclaimed. The information, including
-                    pricing, which appears on this site is subject to change at any time
+                    <span class="font-medium font-36">Advertising Disclosure for Creative Mind Ventures LLC, DBA Senior Savers</span> <br><br>
+                            This website is a free online resource designed to provide helpful content and comparison tools
+        for our visitors. We receive advertising compensation from companies featured on this site,
+        which may affect the positioning and order in which brands (and/or their products) are displayed,
+        as well as the ratings assigned to them. The appearance of a company or product on this page
+        does not constitute an endorsement. Please note that we do not include all providers available
+        in the market. Except as specifically provided in our Terms of Use, we make no representations
+        or warranties regarding the accuracy or completeness of the information presented on this
+        page. Pricing and other details listed on this site may change at any time without notice.
                 </p>
 
             </div>
